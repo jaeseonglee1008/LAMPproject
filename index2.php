@@ -21,5 +21,14 @@
 	}
 
 	 ?>
+	 <!-- 	<?php /*
+	$input = "test123";
+	$hashedPwdInDb = password_hash($input, PASSWORD_DEFAULT);
+	echo $hashedPwdInDb;
+	echo "<br>";
+	echo password_verify($input, $hashedPwdInDb);
+	//hash the password then verify. de-hasing result is true, allow to access.
+	*/ ?> -->
+
 </body>
 </html>
