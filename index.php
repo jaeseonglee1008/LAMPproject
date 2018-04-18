@@ -8,14 +8,33 @@
 </head>
 <body>
 <form action="includes/signup.inc.php" method="POST">
-	<input type="text" name="first" placeholder="First name">
-	<br>
-	<input type="text" name="last" placeholder="Last name">
+	<?php 
+		if (isset($_GET['first'])) {
+			$first = $_GET['first'];
+			echo '<input type="text" name="first" placeholder="First name" value="'.$first.'"><br>';
+		}else{
+			echo '<input type="text" name="first" placeholder="First name"><br>';
+		}
+		if (isset($_GET['last'])) {
+			$last = $_GET['last'];
+			echo '<input type="text" name="last" placeholder="Last name" value="'.$last.'">';
+		}else{
+			echo '<input type="text" name="last" placeholder="Last name">';
+		}
+	 ?>
 	<br>
 	<input type="text" name="email" placeholder="E-mail">
 	<br>
-	<input type="text" name="uid" placeholder="Username">
-	<br>
+	<?php 
+		if (isset($_GET['uid'])) {
+			$last = $_GET['uid'];
+			echo '<input type="text" name="uid" placeholder="Username" value="'.$uid.'">';
+		}else{
+			echo '<input type="text" name="uid" placeholder="Username">';
+		}
+
+	 ?>
+	 <br>
 	<input type="Password" name="pwd" placeholder="Password">
 	<br>
 	<button type="submit" name="submit">Sign up</button>
