@@ -100,6 +100,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
 /*MY CSS BELOW*/
 .main-wrapper{
     margin: 0 auto;
@@ -139,7 +140,7 @@ header nav ul li a{
 }
 
 header .nav-login {
-    float: rigiht;
+    float: right;
 }
 
 header .nav-login form{
@@ -191,4 +192,17 @@ header .nav-login a{
     cursor: pointer;
     float:left; 
 
+}
+
+.main-container{
+    padding-top: : 40px;
+
+}
+
+.main-container h2{
+    font-family: arial;
+    font-size: 40px;
+    color: red;
+    line-height: 50px;
+    text-align: center;
 }
