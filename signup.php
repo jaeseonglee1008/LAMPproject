@@ -1,35 +1,35 @@
 
 <?php 
-	include_once 'header.php';
- ?>
+include_once 'header.php';
+?>
 <section class="main-container">
 	<div class="main-wrapper">
 
-	<div class="container">
-		<!-- setup col-xs-4 below later-->
-		<div>
-			<h1>Sign Up</h1>
-			<p>Please fill in this form to create an account.</p>
-			<hr>
-			<form action="includes/signup.inc.php" method="POST">
+		<div class="container">
+			<!-- setup col-xs-4 below later-->
+			<div>
+				<h1>Sign Up</h1>
+				<p>Please fill in this form to create an account.</p>
+				<hr>
+				<form action="includes/signup.inc.php" method="POST">
 
-				<div class="row">
+					<div class="row">
 
-					<div class="col-xs-6">
-						<label for="first"><b>First name</b></label>
-						<div class="input-group">
-							<span class="input-group-addon"><i class="glyphicon glyphicon-italic"></i></span>
-							<?php 
-							if (isset($_GET['first'])) {
-								$first = $_GET['first'];
-								echo '<input type="text" class="form-control" name="first" placeholder="Enter First Name" value="'.$first.'">';
-							}else{
-								echo '<input type="text" class="form-control" name="first" placeholder="Enter First Name">';
-							}
-							?>
+						<div class="col-xs-6">
+							<label for="first"><b>First name</b></label>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-italic"></i></span>
+								<?php 
+								if (isset($_GET['first'])) {
+									$first = $_GET['first'];
+									echo '<input type="text" class="form-control" name="first" placeholder="Enter First Name" value="'.$first.'">';
+								}else{
+									echo '<input type="text" class="form-control" name="first" placeholder="Enter First Name">';
+								}
+								?>
+							</div>
+
 						</div>
-
-					</div>
 						<div class="col-xs-6">
 							<label for="last"><b>Last name</b></label>
 							<div class="input-group">
@@ -111,13 +111,16 @@
 					}elseif($signupCheck == "success"){
 						echo "<p class='error'>You have been signed up!<p>";
 						exit();
+					}else{
+						echo "<p class='error'>Unknown Error occured!<p>";
+						exit();
 					}
 				}
 				?>
 
 			</div>
 		</div>
-			
+
 
 
 
@@ -127,5 +130,5 @@
 
 
 <?php 
-	include_once 'footer.php';
- ?>
+include_once 'footer.php';
+?>
