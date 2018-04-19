@@ -6,8 +6,7 @@ include_once 'header.php';
 	<div class="main-wrapper">
 
 		<div class="container">
-			<!-- setup col-xs-4 below later-->
-			<div>
+			<div class="col-xs-10">
 				<h1>Sign Up</h1>
 				<p>Please fill in this form to create an account.</p>
 				<hr>
