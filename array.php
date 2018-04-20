@@ -26,7 +26,24 @@ print_r($data);
 $data = array("a","b","c");
 echo $data[0];
 
+// Associative arrays
+$data = array("a","b","c");
+
 
  ?>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
