@@ -5,12 +5,13 @@ include_once 'header.php';
 	<div class="main-wrapper">
 		<h2>Home1</h2>
 		<p>Main page link here</p>
+		
 		<?php 
 		if(isset($_SESSION['u_id'])){
 			echo"You are logged in!";
 		}
 		?>
-
+		
 		<script type="text/javascript">
 			document.write(new Date());
 		</script>
